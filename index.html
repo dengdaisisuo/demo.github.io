@@ -3,9 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <title>小江湖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/aui.css">
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-正在建设......
+<nav class="navbar navbar-default navbar-fixed-top"  >
+    <div class="container" name="top">
+        <div class=" navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href=""><img class="aui-pad-5"src="image/logo.png" alt="" width="56"><span class="f24 vmid">小江湖</span></a>
+        </div>
+        <!--折叠菜单-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right topbar">
+                <li class="active"><a href="#">首页</a></li>
+                <li class="about"><a href="#">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--导航结束-->
+
+<div style="margin-top: 50px"  >
+    <ul class="lunbo  "  style="overflow: hidden;padding: 0;height:400px;" >
+        <li class="fl  aui-col-10"><a href=""><img class=" aui-col-10" src="http://demo.hashthemes.com/hashone/wp-content/uploads/2016/02/banner4.jpg" alt=""></a></li>
+        <!--<li class="fl ab aui-col-10 "><a href=""><img class=" aui-col-10" src="http://demo.hashthemes.com/hashone/wp-content/uploads/2016/02/banner3.jpg" alt=""></a></li>-->
+        <!--<li class="fl ab aui-col-10"><a href=""><img class=" aui-col-10" src="http://demo.hashthemes.com/hashone/wp-content/uploads/2016/02/banner2.jpg" alt=""></a></li>-->
+    </ul>
+</div>
+<!--轮播结束-->
+
+<div class="container text-center" style="padding:30px 0 50px;">
+	
+	<div class="row aui-pad-b-15">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+			<img class="aui-col-9"src="image/share2.png" alt="" />
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="padding-top:100px">
+			<h1>APP主页</h1>
+			<p>全新页面更新，更年轻...</p>
+		</div>
+	</div>
+	<!--app主页-->
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="padding-top:100px">
+			<h1>APP游戏页面</h1>
+			<p>全新页面更新，更年轻...</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+			<img class="aui-col-9" src="image/share1.png" alt="" />
+		</div>
+	</div>
+	<!--app游戏页面-->
+	
+	<div class="row aui-pad-b-15">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+			<img class="aui-col-9"src="image/share2.png" alt="" />
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="padding-top:100px">
+			<h1>APP主页</h1>
+			<p>全新页面更新，更年轻...</p>
+		</div>
+	</div>
+	<!--app主页-->
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="padding-top:100px">
+			<h1>APP游戏页面</h1>
+			<p>全新页面更新，更年轻...</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+			<img class="aui-col-9" src="image/share1.png" alt="" />
+		</div>
+	</div>
+	<!--app游戏页面-->
+</div>
+
+<footer class="text-center aui-pad-15 aui-color-white re" style="background:#606060;">
+	<p>CopyRight © 版权所有: 安阳小江湖</p>
+	<p>联系电话：0372-3900666</p>
+	<div class="ab" style="top:20px;right:14%">
+		<a name="top" href=""><img src="image/dingbu.png" alt="" width="36"/></a>
+		<p class="f12 aui-mar-t-5">返回顶部</p>
+	</div>
+	
+</footer>
+
 </body>
+<script>
+    $(".xinwen img").each(function (i,e) {
+        e.index=i;
+        $(e).mouseenter(function () {
+            $(this).css({"opacity":"0.5"});
+            $(".xinwen h1").eq(this.index).show();
+        });
+        $(e).mouseleave(function () {
+            $(this).css({"opacity":"1"});
+            $(".xinwen h1").eq(this.index).hide();
+        });
+    })
+
+    $(".topbar li").each(function (i,e) {
+        e.index=i;
+        $(e).click(function () {
+            $(this).click(function () {
+                $(".topbar li").removeClass("active");
+                $(this).addClass("active");
+                var a=this.index*350+"px";
+                $("html,body").animate({ scrollTop: a}, 500);
+            })
+        })
+    })
+</script>
 </html>
