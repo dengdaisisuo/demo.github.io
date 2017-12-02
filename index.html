@@ -1,18 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>小江湖</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="小江湖是一种全新的互动游戏购物平台，是时尚，潮流的风向标，能满足个性，年轻一代的消费者购物需求，可以通过创建游戏、邀请好友等多种交互方式低价抢心意的商品，小江湖给你一切皆有可能。小江湖所有的商品均属正品，计算公式和相关数据公开透明。"> 
+<meta name="keyword" content="小江湖,游戏夺宝,购物夺宝,娱乐购物,"> 
+	
+			
 
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/aui.css">
+<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+<link rel="stylesheet" href="css/style.css">
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-</head>
 
+</head>
 <body>
+
 <nav class="navbar navbar-default navbar-fixed-top" name="top" >
     <div class="container">
         <div class=" navbar-header">
@@ -22,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href=""><img class="aui-pad-5"src="image/logo.png" alt="" width="56"><span class="f24 vmid">小江湖</span></a>
+            <a href=""><img class="aui-pad-5"src="images/logo.png" alt="" width="56"><span class="f24 vmid">小江湖</span></a>
         </div>
         <!--折叠菜单-->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,20 +42,21 @@
 </nav>
 <!--导航结束-->
 
-<div style="margin-top: 50px"  >
-    <ul class="lunbo  "  style="overflow: hidden;padding: 0;" >
-        <li class="fl  aui-col-10"><a href=""><img class=" aui-col-10" src="image/banner4.jpg" alt=""></a></li>
-        <!--<li class="fl ab aui-col-10 "><a href=""><img class=" aui-col-10" src="http://demo.hashthemes.com/hashone/wp-content/uploads/2016/02/banner3.jpg" alt=""></a></li>-->
-        <!--<li class="fl ab aui-col-10"><a href=""><img class=" aui-col-10" src="http://demo.hashthemes.com/hashone/wp-content/uploads/2016/02/banner2.jpg" alt=""></a></li>-->
-    </ul>
+
+
+<div class="cont">
+	<div class="slider"></div>
+	<ul class="bnav"></div>
+	<div data-target="right" class="side-nav side-nav--right"></div>
+	<div data-target="left" class="side-nav side-nav--left"></div>
 </div>
-<!--轮播结束-->
+
 
 <div class="container text-center" style="padding:30px 0 70px;">
 	
 	<div class="row aui-pad-b-15">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-			<img class="aui-col-9"src="image/share2.png" alt="" />
+			<img class="aui-col-9"src="images/share2.png" alt="" />
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="padding-top:10%;">
 			<h1>APP主页</h1>
@@ -59,7 +67,7 @@
 
 	<div class="row" >
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 fr">
-			<img class="aui-col-9" src="image/share1.png" alt="" />
+			<img class="aui-col-9" src="images/share1.png" alt="" />
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 fl" style="padding-top:10%;">
 			<h1>APP游戏页面</h1>
@@ -70,7 +78,7 @@
 	
 	<div class="row aui-pad-b-15">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-			<img class="aui-col-9"src="image/share2.png" alt="" />
+			<img class="aui-col-9"src="images/share2.png" alt="" />
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" style="padding-top:10%;">
 			<h1>APP主页</h1>
@@ -81,7 +89,7 @@
 
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 fr">
-			<img class="aui-col-9" src="image/share1.png" alt="" />
+			<img class="aui-col-9" src="images/share1.png" alt="" />
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 fl" style="padding-top:10%;">
 			<h1>APP游戏页面</h1>
@@ -95,54 +103,35 @@
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 aui-mar-t-10" >
 			<button class="aui-col-9 aui-color-white aui-background-lightblue aui-pad-15 aui-border-radius" style="border:none;">
 				android APP
-				<img src="image/download.png" alt="" width="20" />
+				<img src="images/download.png" alt="" width="20" />
 			</button>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 aui-mar-t-10">
 			<button class="aui-col-9 aui-color-white aui-background-lightblue aui-pad-15 aui-border-radius" style="border:transparent;">
 				IOS APP
-				<img src="image/download.png" alt="" width="20" />
+				<img src="images/download.png" alt="" width="20" />
 			</button>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 aui-mar-t-10" ></div>
 	</div>
 	<!--app下载-->
 </div>
-
+	
+	
 <footer class="text-center aui-pad-15 aui-color-white re" style="background:#606060;">
 	<p>CopyRight © 版权所有: 安阳小江湖</p>
 	<p>联系电话：0372-3900666</p>
 	<div class="ab" style="top:20px;right:14%">
-		<a href="#top"><img src="image/dingbu.png" alt="" width="36"/></a>
+		<a href="#top"><img src="images/dingbu.png" alt="" width="36"/></a>
 		<p class="f12 aui-mar-t-5">返回顶部</p>
 	</div>
 	
 </footer>
+	
+	
+	
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="js/main.js"></script>
 
 </body>
-<script>
-    $(".xinwen img").each(function (i,e) {
-        e.index=i;
-        $(e).mouseenter(function () {
-            $(this).css({"opacity":"0.5"});
-            $(".xinwen h1").eq(this.index).show();
-        });
-        $(e).mouseleave(function () {
-            $(this).css({"opacity":"1"});
-            $(".xinwen h1").eq(this.index).hide();
-        });
-    })
-
-    $(".topbar li").each(function (i,e) {
-        e.index=i;
-        $(e).click(function () {
-            $(this).click(function () {
-                $(".topbar li").removeClass("active");
-                $(this).addClass("active");
-                var a=this.index*350+"px";
-                $("html,body").animate({ scrollTop: a}, 500);
-            })
-        })
-    })
-</script>
 </html>
