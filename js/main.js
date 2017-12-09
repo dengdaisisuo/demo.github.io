@@ -24,7 +24,7 @@ $(document).ready(function () {
 		curSlide = target;
 		pagination(1);
 		
-	},2000);
+	},6000);
 	
 	arrCities.map(function (city) {
 		var length = city.length;
